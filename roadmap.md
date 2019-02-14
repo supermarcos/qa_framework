@@ -60,6 +60,11 @@ When a solid branching model and versioning system are in place and working, it 
 We need to discuss about the system to implement so we all (or at least the people responsible for deployments) can be familiar with it. A system we can use in different environments either if those are in our own hosting system or in a PaaS whatever it is.
 It is important to try and think about vendor-locking here, if we configure this deployment system only for a particular PaaS or hosting type, we may not be able to reuse it for other platforms.
 
+**GEO Server**: currently we are overriding and backing up files manually every time we want some changes, but actually many customers are sharing the same configuration, styles, etc for different entities. There has been some issues when changing some styles and introducing breaking changes for other ports or features.
+Every client using GeoServer should have their own configuration and styles. The ones that are shared should be transparent and very well known so anyone introducing changes can test in different places before making their way into production environments. Environments are also an issue, currently we don't have dev, test and prod environments so every change is being made directly on production, which is very dangerous. The final issue is about how GeoServer stores files, configurations and styles: some seem to be on folders as json or xml files, some are somewhere else, maybe in a database... We have to find out a method to version and sandbox by environments (and customers) the different configurations, shapefiles and styles so it is safe to develop, test and deploy changes.
+
+**Http Server**: same issues that with the GeoServer is more or less happening for the Web Server.
+
 ## Stage 6: RACI Matrix and Comunication
 
 At this stage we should already have a set of good practices implemented, a solid branching model that results in good versioning and our deployments are being automated, now we need to start thinking about developing a responsibility assigment matrix.
@@ -71,6 +76,7 @@ Consulted: the people that needs to be consulted, they don't hold the final deci
 Informed: everyone that should know about the new features being shiped in the new release with what, why, when and how. They can be from technical members of the team working in parts related with some to be released to customer assistants, support teams, sales, marketing... almost anyone.
 This matrix helps pinpointing and addressing the right players in every release. It is like a checklist that helps the deployment manager to go through the right path when a new release is scheduled and ready to happen. Then is when the communication channels are in stake.
 We have to find the right way to communicate actively the people involved and those people involved have the responsibility of replying and make the questions they may have in a timely manner and very well comunicated to the accountable player so comunication can go both ways fluently.
+We have to identify, in each project or task, who are the different people and their roles as well as a reliable communication mean that can fluently work both ways in a timely manner.
 
 ## Stage 7: Implementing different software testing techniques
 
