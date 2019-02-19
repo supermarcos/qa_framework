@@ -25,6 +25,9 @@ https://git-scm.com/book/en/v2/Git-Branching-Rebasing
 And also by Atlassian:
 https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
+### Squashing commits
+Squash command allows the user to combine many commits into one in the same branch. This is useful when dealing with Work in Progress and it is less agressive than rebasing, respecting the historic data.
+
 ### Releases and Tags
 In the previous image you can see tags (as in releases or versions) represented as baby-blue squares.
 Using Github there are multiple ways of generating new releases or versions, but one of the easiest is actually tagging code at certain point. Usually either on master branch or production branch depending on the agreed semantics.
