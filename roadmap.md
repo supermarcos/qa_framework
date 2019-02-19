@@ -39,17 +39,17 @@ These good practices usually start with the code style itself, the quality of th
 
 ## Stage 4: GitFlow, Code Review and SemVer
 
-**Adopting GitFlow**
+### **Adopting GitFlow**
 GitFlow is not everyone's favourite branching model nor a silver bullet to solve every issue that may arise when a particular repository is receiving code from multiple developers working in different (or the same) area, features, bugs... however, in my humble personal experience with and without it, I definitely see its relevance specially important when talking about scattered team members working from different places.
 Having a proper branching model in place helps communicating changes, review them, avoid merging conflicts and keep a consistent code quality across the repository and the different team members.
 Probably everyone knows gitflow or some similar branching model. We should get to the agreement of using a consistent and homogeneous branching model across different teams and repositories so that way it is easier to jump from team to team or project to project and keep the same workflow with minimum hiccups and very flat adapting curve.
 Let's talk about the GitFlow strategy to implement [here](gitflow.md).
 
-**Code Review Strategy**
+### **Code Review Strategy**
 One of the best advantages of having a proper branching strategy in place is the posibility of identify events in the workflow where Code Review practices can implemented.
 You can find references to the Code Review Strategy in the [GitFlow](gitflow.md) section.
 
-**Facilitating Semantinc Versioning**
+### **Facilitating Semantinc Versioning**
 The final step in this stage is implementing a proper semantic versioning strategy when releasing new revisions of a particular component or application. Having a good branching model helps to match up the roadmap, the workload and the different versions released with the needed changelog documentation in place.
 This is particularly important when releasing revisions of components that are being used across different projects by multiple teams.
 The release strategy is also documented in the [GitFlow](gitflow.md) section.
@@ -84,10 +84,4 @@ At this stage we know what we can get done in regards to our resources.
 Here is when we start talking about integrating in the workflow different testing techniques more advanced than the ones so far implemented. We start thinking more about testing than code here.
 
 Have a look af the diferent types of testing phases we could implement [here](testing_phases.md).
-
-
-
-
-
-
 
