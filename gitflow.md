@@ -13,6 +13,7 @@ The best way to learn anything (at least in my opinion) is using it.
 Some use cases and situations you may face and how to solve them using Git-Flow:
 
 **Branching and Merging**
+
 All in one overview of branching and how code splits and merges from branch to branch:
 ![Git flow workflow - Hotfix Branches](branching_overview.svg)
 
