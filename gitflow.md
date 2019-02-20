@@ -19,10 +19,10 @@ All in one overview of branching and how code splits and merges from branch to b
 ### Rebasing
 Instead of using a merge commit, rebasing _re-writes_ the project history by creating brand new commits for each commit in the original branch.
 
-Here is a good explanation about rebasing and when it makes sense (by git):
+Here is a good explanation about rebasing and when it makes sense (by git):  
 https://git-scm.com/book/en/v2/Git-Branching-Rebasing
 
-And also by Atlassian:
+And also by Atlassian:  
 https://www.atlassian.com/git/tutorials/merging-vs-rebasing
 
 ### Squashing commits
