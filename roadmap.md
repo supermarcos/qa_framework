@@ -10,7 +10,7 @@ How much can we implement, given the resources and the workload we handle?
 The first stage on any QA Framework implementation is to identify the pain points inthe context of the company, the available resources (the team, the timeframe, the funding) and the knowledge of the team in the testing arena.
 
 
-## Stage 2: Definition of QA Framework and dev guidelines
+## **Stage 2: Definition of QA Framework and dev guidelines**
 
 This is precisely this documentation and the proposal.
 What we try to do here is to analyse the testing needs, procedures and capabilities that we can progresively implement whereas they make sense in our context.
@@ -24,7 +24,7 @@ We need to agree in the way we are going to document specs and features when the
  - You can find our Ticket / task Style Guide here
  - You can find our Bug / Defect Style Guide here
 
-## Stage 3: Code Style, Code Documentation and Unit Testing
+## **Stage 3: Code Style, Code Documentation and Unit Testing**
 
 One of the easiest and simpliest stages to implement when talking about testing is actually having a solid set of good practices well defined. 
 These good practices usually start with the code style itself, the quality of the different algorithms from different points of view, the documentation, unit testing, etc...
@@ -37,7 +37,7 @@ These good practices usually start with the code style itself, the quality of th
  - How-to's guides and documentation for developers: another important part when talking about best practices is commenting not only the code, but creating guidelines and how-to's, simple websites that can be published, README files on repositories with some simple examples of use...
  - Unit testing: we all know we have to test our code, writting unit tests for each of the pieces of code (that are actually testable and it makes sense to do so) is a must and we should try to make it part of the minimum requirements when pushing code to our repositories to be approved and merged into the main branches.
 
-## Stage 4: GitFlow, Code Review and SemVer
+## **Stage 4: GitFlow, Code Review and SemVer**
 
 ### **Adopting GitFlow**
 GitFlow is not everyone's favourite branching model nor a silver bullet to solve every issue that may arise when a particular repository is receiving code from multiple developers working in different (or the same) area, features, bugs... however, in my humble personal experience with and without it, I definitely see its relevance specially important when talking about scattered team members working from different places.
@@ -54,7 +54,7 @@ The final step in this stage is implementing a proper semantic versioning strate
 This is particularly important when releasing revisions of components that are being used across different projects by multiple teams.
 The release strategy is also documented in the [GitFlow](gitflow.md) section.
 
-## Stage 5: Environments and CD/CI
+## **Stage 5: Environments and CD/CI**
 
 When a solid branching model and versioning system are in place and working, it is time to think about automating deployments.
 We need to discuss about the system to implement so we all (or at least the people responsible for deployments) can be familiar with it. A system we can use in different environments either if those are in our own hosting system or in a PaaS whatever it is.
