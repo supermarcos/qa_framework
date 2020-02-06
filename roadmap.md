@@ -65,7 +65,7 @@ Every client using GeoServer should have their own configuration and styles. The
 
 **Http Server**: same issues that with the GeoServer is more or less happening for the Web Server.
 
-## Stage 6: RACI Matrix and Comunication
+## **Stage 6: RACI Matrix and Comunication**
 
 At this stage we should already have a set of good practices implemented, a solid branching model that results in good versioning and our deployments are being automated, now we need to start thinking about developing a responsibility assigment matrix.
 Identifying in each stage of a new release (however small it could be) responsibilities. 
@@ -78,7 +78,7 @@ This matrix helps pinpointing and addressing the right players in every release.
 We have to find the right way to communicate actively the people involved and those people involved have the responsibility of replying and make the questions they may have in a timely manner and very well comunicated to the accountable player so comunication can go both ways fluently.
 We have to identify, in each project or task, who are the different people and their roles as well as a reliable communication mean that can fluently work both ways in a timely manner.
 
-## Stage 7: Implementing different software testing techniques
+## **Stage 7: Implementing different software testing techniques**
 
 At this stage we know what we can get done in regards to our resources.
 Here is when we start talking about integrating in the workflow different testing techniques more advanced than the ones so far implemented. We start thinking more about testing than code here.
